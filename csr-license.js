@@ -1,4 +1,3 @@
-<script type="application/javascript">
     function frameload() {
         var domain = '*';
         var iframe = '';
@@ -27,4 +26,3 @@
 
         }, false);
     }
-</script>
