@@ -8,6 +8,7 @@ iframe.onload = function() {
         var iframe = '';
         var iframeElements = document.getElementsByTagName('iframe');
         for (var j = 0; j < iframeElements.length; j++) {
+        var elem=iframeElements[j];
             for (var i = 0; i < elem.attributes.length; i++) {
                 var attrib = elem.attributes[i];
                 if (attrib.specified && attrib.name == 'src') {
