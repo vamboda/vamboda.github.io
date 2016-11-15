@@ -1,5 +1,9 @@
-console.log(window.location.hostname);    
-function frameload() {
+console.log(window.location.hostname); 
+
+var iframe = document.createElement('iframe');
+iframe.src = "https://corporatematching.org/index_clients.html";
+iframe.title="Search your company:"
+iframe.onload = function() {
         var domain = '*';
         var iframe = '';
         var iframeElements = document.getElementsByTagName('iframe');
@@ -15,7 +19,7 @@ function frameload() {
             }
         }
         
-        var message = valuesplusfoundation.org;
+        var message = "valuesplusfoundation.org";
 
         console.log('[SOURCE]blog.local:  sending message:  ' + message);
 
@@ -26,8 +30,6 @@ function frameload() {
             console.log('[SOURCE]received response:  ', event.data);
 
         }, false);
-    }
+    };
 
-<iframe  id="corporate-matching-iframe" onload="frameload()" title="Search your company:" width="700" height="400" scrolling="auto" frameborder="0" allowtransparency="true"  src="https://corporatematching.org/index_clients.html">
-
-</iframe>
+document.body.appendChild(iframe);
