@@ -1,4 +1,5 @@
-    function frameload() {
+console.log(document.domain);    
+function frameload() {
         var domain = '*';
         var iframe = '';
         var iframeElements = document.getElementsByTagName('iframe');
