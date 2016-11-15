@@ -1,4 +1,4 @@
-console.log(document.domain);    
+console.log(window.location.hostname);    
 function frameload() {
         var domain = '*';
         var iframe = '';
