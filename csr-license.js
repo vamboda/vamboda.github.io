@@ -6,6 +6,7 @@ iframe.title="Search your company:"
 iframe.setAttribute("id", "corporate-matching-iframe");
 iframe.width="100%";
 iframe.height="100%";
+ifraem.frameBorder=0;
 document.body.appendChild(iframe);
 
 iframe.onload = function() {
