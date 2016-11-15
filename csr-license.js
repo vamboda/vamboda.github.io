@@ -4,8 +4,8 @@ var iframe = document.createElement('iframe');
 iframe.src = "https://corporatematching.org/index_clients.html";
 iframe.title="Search your company:"
 iframe.setAttribute("id", "corporate-matching-iframe");
-iframe.width=screen.width;
-iframe.height=screen.height;
+iframe.width="100%";
+iframe.height="100%";
 document.body.appendChild(iframe);
 
 iframe.onload = function() {
