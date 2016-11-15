@@ -4,12 +4,10 @@ var iframe = document.createElement('iframe');
 iframe.src = "https://corporatematching.org/index_clients.html";
 iframe.title="Search your company:"
 iframe.setAttribute("id", "corporate-matching-iframe");
+iframe.width=screen.width;
+iframe.height=screen.height;
 document.body.appendChild(iframe);
-function resizeIFrameToFitContent( iFrame ) {
 
-    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-}
 iframe.onload = function() {
         var domain = '*';
         // var iframe = '';
@@ -39,16 +37,4 @@ iframe.onload = function() {
 
         }, false);
     };
-    
-window.addEventListener('DOMContentReady', function(e) {
-
-    var iFrame = document.getElementById( 'iFrame1' );
-    resizeIFrameToFitContent( iFrame );
-
-    // or, to resize all iframes:
-    var iframes = document.querySelectorAll("corporate-matching-iframe");
-    for( var i = 0; i < iframes.length; i++) {
-        resizeIFrameToFitContent( iframes[i] );
-    }
-} );
 
