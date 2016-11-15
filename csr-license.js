@@ -3,7 +3,7 @@ console.log(window.location.hostname);
 var iframe = document.createElement('iframe');
 iframe.src = "https://corporatematching.org/index_clients.html";
 iframe.title="Search your company:"
-myPara.setAttribute("id", "corporate-matching-iframe");
+iframe.setAttribute("id", "corporate-matching-iframe");
 iframe.onload = function() {
         var domain = '*';
         // var iframe = '';
