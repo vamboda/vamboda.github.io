@@ -15,7 +15,7 @@ function frameload() {
             }
         }
         
-        var message = window.location.hostname;
+        var message = valuesplusfoundation.org;
 
         console.log('[SOURCE]blog.local:  sending message:  ' + message);
 
@@ -27,3 +27,7 @@ function frameload() {
 
         }, false);
     }
+
+<iframe  id="corporate-matching-iframe" onload="frameload()" title="Search your company:" width="700" height="400" scrolling="auto" frameborder="0" allowtransparency="true"  src="https://corporatematching.org/index_clients.html">
+
+</iframe>
