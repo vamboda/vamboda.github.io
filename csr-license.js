@@ -26,7 +26,7 @@ iframe.onload = function() {
 //             }
 //         }
         var iframe = document.getElementById('corporate-matching-iframe').contentWindow;
-        var message = "valuesplusfoundation.org";
+        var message = "valuesplusfoundation.org1";
 
         console.log('[SOURCE]blog.local:  sending message:  ' + message);
 
