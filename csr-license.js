@@ -1,7 +1,7 @@
 console.log(window.location.hostname); 
 
 var iframe = document.createElement('iframe');
-iframe.src = "https://corporatematching.org/index_clients.html?domainUrl="+encodeURI(document.location.href);
+iframe.src = "https://corporatematching.org/index_clients.html?requestorURL="+encodeURI(document.location.href);
 iframe.title="Search your company:"
 iframe.setAttribute("id", "corporate-matching-iframe");
 iframe.width="100%";
