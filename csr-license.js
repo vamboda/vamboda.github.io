@@ -7,6 +7,10 @@ iframe.setAttribute("id", "corporate-matching-iframe");
 iframe.width="100%";
 iframe.height="100%";
 iframe.frameBorder=0;
+iframe.scrolling="auto";
+iframe.setAttribute('allowtransparency', 'true');
+
+
 document.body.appendChild(iframe);
 iframe.onload = function() {
         var domain = '*';
