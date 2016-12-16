@@ -33,7 +33,7 @@ iframe.onload = function() {
 
 
         var iframe = document.getElementById('corporate-matching-iframe').contentWindow;
-        var message = "valuesplusfoundation.org";
+        var message = "vpf.org";
 
         console.log('[SOURCE]blog.local:  sending message:  ' + message);
 
